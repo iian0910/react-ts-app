@@ -1,3 +1,11 @@
 @import "bootstrap/scss/functions";
 @import "./helpers/variables";
+@import "./helpers/colors";
 @import "bootstrap/scss/bootstrap";
+
+
+.box {
+  width: 50px;
+  height: 50px;
+  background-color: $primary-120;
+}
