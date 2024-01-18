@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@500;700&display=swap');
+
+* {
+  font-family: 'Noto Serif TC', serif;
+  text-align: left;
+}
+
+.Display_Heading {
+  //styleName: Display Heading 100px B;
+  font-size: 100px;
+  font-weight: 700;
+  line-height: 120px;
+  letter-spacing: 0.05em;
+}
+
+.H1 {
+  //styleName: H1. 48px B;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 58px;
+  letter-spacing: 0.05em;
+}
+
+.H2 {
+  //styleName: H2. 40px B;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: 0.05em;
+}
+
+.H3 {
+  //styleName: H3. 32px B;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 38px;
+  letter-spacing: 0.05em;
+}
+
+.H4 {
+  //styleName: H4. 28px B;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 34px;
+  letter-spacing: 0.05em;
+}
+
+.H5 {
+  //styleName: H5. 24px B;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 29px;
+  letter-spacing: 0.05em;
+}
+
+.H6 {
+  //styleName: H6. 20px B;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.05em;
+}
+
+.Title {
+  //styleName: Title 16px B;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+}
+
+.Subtitle {
+  //styleName: Subtitle 14px B;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 21px;
+  letter-spacing: 0.02em;
+}
+
+.Body {
+  //styleName: Body 16px R;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+}
+
+.Body2 {
+  //styleName: Body2 14px R;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 21px;
+  letter-spacing: 0.02em;
+}
+
+.Tiny {
+  //styleName: Tiny 12px R;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 0.02em;
+}
