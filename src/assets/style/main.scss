@@ -3,4 +3,8 @@
 @import "./helpers/colors";
 @import "bootstrap/scss/bootstrap";
 
-@import "./helpers/customerFont"
+@import "./helpers/customerFont";
+
+.mb-40 {
+  margin-bottom: 40px;
+}

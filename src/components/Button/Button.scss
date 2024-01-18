@@ -3,6 +3,7 @@
 @import "../../assets/style/helpers/colors";
 
 .btn {
+  width: 100%;
   padding: 16px 32px;
   color: white;
   border-radius: 8px;
@@ -13,7 +14,7 @@
       background-color: $primary-120;
     }
     &.disabled {
-      background-color: transparent;
+      background-color: $neutral-40;
       color: $neutral-60;
       opacity: 1;
     }
@@ -47,6 +48,8 @@
     }
   }
   &.text {
+    width: auto;
+    padding: 0;
     background-color: transparent;
     border: none;
     color: $primary;

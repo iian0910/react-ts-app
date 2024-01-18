@@ -2,6 +2,9 @@
 @import "../../assets/style/helpers/variables";
 @import "../../assets/style/helpers/colors";
 
+.form-label {
+  color: white;
+}
 .form-control {
   padding: 16px;
   color: $neutral-80;
