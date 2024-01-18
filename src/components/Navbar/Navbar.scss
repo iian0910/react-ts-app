@@ -1,0 +1,18 @@
+@import "../../assets/style/helpers/colors";
+
+.navbar {
+  padding: 24px 80px;
+  background-color: $neutral-BG !important;
+  color: white;
+  .nav-link {
+    color: white;
+  }
+}
+.hex_logo {
+  width: 196px;
+  height: 72px;
+  display: block;
+}
+.navItem {
+  padding: 16px;
+}
