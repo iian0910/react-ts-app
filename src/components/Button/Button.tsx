@@ -1,17 +1,18 @@
 import "./Button.scss"
 
 interface ButtonProps {
+  type: "button" | "submit" | "reset" | undefined,
   text: string;
   status: string;
-  handleChange: any
+  handleChange: any | null | undefined
 }
 
-export function Button({ text, status, handleChange }: ButtonProps) {
+export function Button({ type, text, status, handleChange }: ButtonProps) {
   const combinedClassName = `btn ${status} Subtitle_mobile`;
   return (
     <>
       <button
-        type="button"
+        type={type}
         className={combinedClassName}
         onClick={handleChange}
       >

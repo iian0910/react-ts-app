@@ -28,7 +28,7 @@ export function Navbar({ showNavItem }: blockStatus){
               <div className="d-flex align-items-center">
                 <span className="navItem Title me-3">客房資訊</span>
                 <span className="navItem Title me-3">使用者</span>
-                <Button text='登入' status='primary' handleChange={change}/>
+                <Button type="button" text='登入' status='primary' handleChange={change}/>
               </div>
             </div>
           </div>
