@@ -56,6 +56,10 @@ export function Login() {
                       required: {
                         value: true,
                         message: '請輸入電子信箱'
+                      },
+                      pattern: {
+                        value: /^\S+@\S+$/i,
+                        message: 'Email 格式不正確'
                       }
                     }}
                   />
