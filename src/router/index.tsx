@@ -1,13 +1,13 @@
 import { Routes, Route } from 'react-router-dom';
 import { Login } from '../pages/frontend/Login/Login';
-import { FrontEndIndex } from '../pages/frontend';
+import { SingIn } from '../pages/frontend/SignIn/SignIn';
 
 export function Router(){
   return (
     <>
       <Routes>
-        <Route path='/login' element={<Login/>}></Route>
-        <Route path='/' element={<FrontEndIndex/>}></Route>
+        <Route index element={<Login/>}></Route>
+        <Route path='/signIn' element={<SingIn/>}></Route>
       </Routes>
     </>
   )

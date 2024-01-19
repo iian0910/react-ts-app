@@ -1,0 +1,35 @@
+@import "bootstrap/scss/functions";
+@import "../../../assets/style/helpers/variables";
+@import "../../../assets/style/helpers/colors";
+
+$wide: '(min-width: 1800px)' !default;
+$desktop: '(min-width: 1200px)' !default;
+$tablet-landscape: '(min-width: 900px)' !default;
+$tablet-protrait: '(min-width: 600px)' !default;
+$phone: '(max-width: 600px)' !default;
+
+@mixin media($query:$phone){
+  @media #{$query}{
+    @content
+  }
+}
+
+.sideImg {
+  width: 100%;
+  height: calc(var(--vh, 1vh) * 100);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.login_contain {
+  width: 100%;
+  height: calc(var(--vh, 1vh) * 100);
+  background-color: $neutral-BG;
+}
+.box {
+  width: 416px;
+  @include media($phone) {
+    width: 100%;
+    padding: 0 20px;
+  }
+}
