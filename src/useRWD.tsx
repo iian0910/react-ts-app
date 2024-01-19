@@ -11,12 +11,22 @@ export function useRWD() {
     }
   }
 
+  const handleViewHeigh = () => {
+    let vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
+  }
+
   useEffect(() => {
     window.addEventListener('resize', handleRWD)
+    window.addEventListener('resize', handleViewHeigh)
     handleRWD()
+    handleViewHeigh()
 
     return (
-      () => window.removeEventListener('resize',handleRWD)
+      () => {
+        window.removeEventListener('resize', handleRWD)
+        window.removeEventListener('resize', handleViewHeigh)
+      }
     )
   },[])
 
