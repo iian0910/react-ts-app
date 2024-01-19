@@ -1,5 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@500;700&display=swap');
 
+$wide: '(min-width: 1800px)' !default;
+$desktop: '(min-width: 1200px)' !default;
+$tablet-landscape: '(min-width: 900px)' !default;
+$tablet-protrait: '(min-width: 600px)' !default;
+$phone: '(max-width: 600px)' !default;
+
+@mixin media($query:$phone){
+  @media #{$query}{
+    @content
+  }
+}
+
 * {
   font-family: 'Noto Serif TC', serif;
   text-align: left;
@@ -20,6 +32,15 @@
   line-height: 58px;
   letter-spacing: 0.05em;
 }
+@include media($phone) {
+  .H1_mobile {
+    //styleName: H1. 48px B;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 58px;
+    letter-spacing: 0.05em;
+  }
+}
 
 .H2 {
   //styleName: H2. 40px B;
@@ -27,6 +48,15 @@
   font-weight: 700;
   line-height: 48px;
   letter-spacing: 0.05em;
+}
+@include media($phone) {
+  .H2_mobile {
+    //styleName: H2. 40px B;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: 0.05em;
+  }
 }
 
 .H3 {
@@ -36,6 +66,15 @@
   line-height: 38px;
   letter-spacing: 0.05em;
 }
+@include media($phone) {
+  .H3_mobile {
+    //styleName: H3. 32px B;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 38px;
+    letter-spacing: 0.05em;
+  }
+}
 
 .H4 {
   //styleName: H4. 28px B;
@@ -43,6 +82,15 @@
   font-weight: 700;
   line-height: 34px;
   letter-spacing: 0.05em;
+}
+@include media($phone) {
+  .H4_mobile {
+    //styleName: H4. 28px B;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 34px;
+    letter-spacing: 0.05em;
+  }
 }
 
 .H5 {
@@ -52,6 +100,15 @@
   line-height: 29px;
   letter-spacing: 0.05em;
 }
+@include media($phone) {
+  .H5_mobile {
+    //styleName: H5. 24px B;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+    letter-spacing: 0.05em;
+  }
+}
 
 .H6 {
   //styleName: H6. 20px B;
@@ -59,6 +116,15 @@
   font-weight: 700;
   line-height: 24px;
   letter-spacing: 0.05em;
+}
+@include media($phone) {
+  .H6_mobile {
+    //styleName: H6. 20px B;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.05em;
+  }
 }
 
 .Title {
@@ -68,6 +134,15 @@
   line-height: 24px;
   letter-spacing: 0.02em;
 }
+@include media($phone) {
+  .Title_mobile {
+    //styleName: Title 16px B;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+  }
+}
 
 .Subtitle {
   //styleName: Subtitle 14px B;
@@ -75,6 +150,15 @@
   font-weight: 700;
   line-height: 21px;
   letter-spacing: 0.02em;
+}
+@include media($phone) {
+  .Subtitle_mobile {
+    //styleName: Subtitle 14px B;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 21px;
+    letter-spacing: 0.02em;
+  }
 }
 
 .Body {
@@ -84,6 +168,15 @@
   line-height: 24px;
   letter-spacing: 0.02em;
 }
+@include media($phone) {
+  .Body_mobile {
+    //styleName: Body 16px R;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+  }
+}
 
 .Body2 {
   //styleName: Body2 14px R;
@@ -92,6 +185,15 @@
   line-height: 21px;
   letter-spacing: 0.02em;
 }
+@include media($phone) {
+  .Body2_mobile {
+    //styleName: Body2 14px R;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+    letter-spacing: 0.02em;
+  }
+}
 
 .Tiny {
   //styleName: Tiny 12px R;
@@ -99,4 +201,13 @@
   font-weight: 500;
   line-height: 18px;
   letter-spacing: 0.02em;
+}
+@include media($phone) {
+  .Tiny_mobile {
+    //styleName: Tiny 12px R;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: 0.02em;
+  }
 }

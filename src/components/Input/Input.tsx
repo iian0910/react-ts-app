@@ -12,7 +12,7 @@ export function Input({label, type, inputID, placeholder}: InputConstructor){
     <>
       <label
         htmlFor={inputID}
-        className="form-label mb-2"
+        className="form-label Subtitle_mobile mb-2"
       >
         { label }
       </label>

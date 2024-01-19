@@ -2,8 +2,21 @@
 @import "../../assets/style/helpers/variables";
 @import "../../assets/style/helpers/colors";
 
+$wide: '(min-width: 1800px)' !default;
+$desktop: '(min-width: 1200px)' !default;
+$tablet-landscape: '(min-width: 900px)' !default;
+$tablet-protrait: '(min-width: 600px)' !default;
+$phone: '(max-width: 600px)' !default;
+
+@mixin media($query:$phone){
+  @media #{$query}{
+    @content
+  }
+}
+
 .form-label {
   color: white;
+  margin-bottom: 8px;
 }
 .form-control {
   padding: 16px;

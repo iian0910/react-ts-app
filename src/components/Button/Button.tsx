@@ -6,7 +6,7 @@ interface ButtonProps {
 }
 
 export function Button({ text, status }: ButtonProps) {
-  const combinedClassName = `btn ${status}`;
+  const combinedClassName = `btn ${status} Subtitle_mobile`;
   return (
     <>
       <button
