@@ -1,5 +1,6 @@
 import { Input } from '../../../components/Input/Input'
 import { Button } from '../../../components/Button/Button'
+import { Checkbox } from '../../../components/Checkbox/Checkbox'
 import { useNavigate } from 'react-router-dom'
 import { useForm } from 'react-hook-form'
 
@@ -11,14 +12,17 @@ export function Login() {
     register,
     handleSubmit,
     formState: { errors }
-  } = useForm({ mode: 'onTouched' })
+  } = useForm({
+    defaultValues: {},
+    mode: 'onTouched'
+  })
 
   const onSubmit = (data: any) => {
     console.log('DATA ==>', data)
   }
 
-  function change () {
-    console.log('!!!@@@')
+  function resetPassword () {
+    console.log('重新設定密碼!!!')
   }
   function goToSingIn(){
     navigate('/signIn')
@@ -51,7 +55,7 @@ export function Login() {
                     label='電子信箱'
                     type='email'
                     inputID='mail'
-                    placeholder="name@example.com"
+                    placeholder="text@mail.com"
                     rules={{
                       required: {
                         value: true,
@@ -79,11 +83,16 @@ export function Login() {
                   />
 
                   <div className='mb-40 d-flex justify-content-between'>
-                    <div className='text-white Subtitle_mobile'>記住密碼</div>
-                    <Button type="button" text='忘記密碼?' status='text' handleChange={change} />
+                    <Checkbox
+                      register={register}
+                      label="記住密碼"
+                      type="checkbox"
+                      id="isCheck"
+                    />
+                    <Button type="button" text='忘記密碼?' status='text' handleChange={resetPassword} />
                   </div>
                   <div className="mb-40">
-                    <Button type="submit" text="會員登入" status="primary" handleChange={change}/>
+                    <Button type="submit" text="會員登入" status="primary" handleChange={null}/>
                   </div>
                   <div className='d-flex align-items-center'>
                     <span className='text-white me-2 Subtitle_mobile'>沒有會員嗎?</span>
