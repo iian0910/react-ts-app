@@ -1,0 +1,9 @@
+@import "../../assets/style/helpers/colors";
+
+.non-step {
+    background-color: transparent !important;
+    border: 1px solid $neutral-60;
+}
+.non-step-text {
+    color: $neutral-60;
+}

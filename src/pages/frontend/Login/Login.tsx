@@ -1,10 +1,9 @@
 import { Input } from '../../../components/Input/Input'
 import { Button } from '../../../components/Button/Button'
 import { Checkbox } from '../../../components/Checkbox/Checkbox'
+import './Login.scss'
 import { useNavigate } from 'react-router-dom'
 import { useForm } from 'react-hook-form'
-
-import './Login.scss'
 
 export function Login() {
   const navigate = useNavigate()
@@ -17,7 +16,7 @@ export function Login() {
     mode: 'onTouched'
   })
 
-  const onSubmit = (data: any) => {
+  const onSubmit = (data: object) => {
     console.log('DATA ==>', data)
   }
 
@@ -81,8 +80,7 @@ export function Login() {
                       }
                     }}
                   />
-
-                  <div className='mb-40 d-flex justify-content-between'>
+                  <div className='d-flex justify-content-between'>
                     <Checkbox
                       register={register}
                       label="記住密碼"
@@ -91,7 +89,7 @@ export function Login() {
                     />
                     <Button type="button" text='忘記密碼?' status='text' handleChange={resetPassword} />
                   </div>
-                  <div className="mb-40">
+                  <div className="my-40">
                     <Button type="submit" text="會員登入" status="primary" handleChange={null}/>
                   </div>
                   <div className='d-flex align-items-center'>
