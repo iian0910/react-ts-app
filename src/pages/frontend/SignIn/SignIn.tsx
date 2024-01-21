@@ -144,6 +144,7 @@ export function SingIn() {
                         errors={errors}
                       />
                       <Checkbox
+                        checkboxType='2'
                         register={register}
                         label="我已閱讀並同意本網站個資使用規範"
                         type="checkbox"

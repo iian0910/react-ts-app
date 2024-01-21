@@ -82,6 +82,7 @@ export function Login() {
                   />
                   <div className='d-flex justify-content-between'>
                     <Checkbox
+                      checkboxType='1'
                       register={register}
                       label="記住密碼"
                       type="checkbox"
