@@ -2,6 +2,8 @@ import { Input } from '../../../components/Input/Input'
 import { Button } from '../../../components/Button/Button'
 import { Checkbox } from '../../../components/Checkbox/Checkbox'
 import { Step } from '../../../components/Step/Step'
+import { Address } from '../../../components/Address/Address'
+import { DatePick } from '../../../components/DatePick/DatePick'
 import './SignIn.scss'
 import { useNavigate } from 'react-router-dom'
 import { useState } from 'react'
@@ -16,6 +18,7 @@ export function SingIn() {
   } = useForm({ mode: 'onTouched' })
 
   const [step, setStep] = useState(1)
+  const [city, setCity] = useState('')
   
   const onSubmit = (data: object) => {
     if (step === 1) {
@@ -53,7 +56,7 @@ export function SingIn() {
                   <div className="H1 H3_mobile text-white">立即註冊</div>
                   <Step step={step}/>
                   { step === 1 &&
-                    <div>  
+                    <div>
                       <Input
                         register={register}
                         errors={errors}
@@ -132,33 +135,13 @@ export function SingIn() {
                           }
                         }}
                       />
-                      <Input
+                      <DatePick
                         register={register}
                         errors={errors}
-                        label='出生年月日'
-                        type='text'
-                        inputID='birthday'
-                        placeholder="請輸入出生年月日"
-                        rules={{
-                          required: {
-                            value: true,
-                            message: '請輸入出生年月日'
-                          }
-                        }}
                       />
-                      <Input
+                      <Address
                         register={register}
                         errors={errors}
-                        label='地址'
-                        type='text'
-                        inputID='address'
-                        placeholder="請輸入地址"
-                        rules={{
-                          required: {
-                            value: true,
-                            message: '請輸入地址'
-                          }
-                        }}
                       />
                       <Checkbox
                         register={register}
