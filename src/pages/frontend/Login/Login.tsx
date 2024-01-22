@@ -1,6 +1,9 @@
-import { Input } from '../../../components/Input/Input'
-import { Button } from '../../../components/Button/Button'
-import { Checkbox } from '../../../components/Checkbox/Checkbox'
+import {
+  Input,
+  Button,
+  Checkbox
+} from '../../../components/Components'
+
 import './Login.scss'
 import { useNavigate } from 'react-router-dom'
 import { useForm } from 'react-hook-form'

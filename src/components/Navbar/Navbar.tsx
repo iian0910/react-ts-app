@@ -1,7 +1,9 @@
 import { Link } from "react-router-dom"
 import "./Navbar.scss"
 
-import { Button } from "../Button/Button"
+import {
+  Button
+} from '../Components'
 
 interface blockStatus {
   showNavItem: boolean

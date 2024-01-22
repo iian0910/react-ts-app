@@ -1,9 +1,12 @@
-import { Input } from '../../../components/Input/Input'
-import { Button } from '../../../components/Button/Button'
-import { Checkbox } from '../../../components/Checkbox/Checkbox'
-import { Step } from '../../../components/Step/Step'
-import { Address } from '../../../components/Address/Address'
-import { DatePick } from '../../../components/DatePick/DatePick'
+import {
+  Input,
+  Button,
+  Checkbox,
+  Stepper,
+  Address,
+  DatePick
+} from '../../../components/Components'
+
 import './SignIn.scss'
 import { useNavigate } from 'react-router-dom'
 import { useState } from 'react'
@@ -46,7 +49,7 @@ export function SingIn() {
           <div className="box">
             <div className="Title Subtitle_Mobile text-primary mb-2">享樂酒店，誠摯歡迎</div>
             <div className="H1 H3_mobile text-white">立即註冊</div>
-            <Step step={step}/>
+            <Stepper step={step}/>
             { step === 1 &&
               <div>
                 <Input

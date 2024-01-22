@@ -1,10 +1,10 @@
-import './Step.scss'
+import './Stepper.scss'
 
 interface StepConstructor{
   step: number
 }
 
-export function Step ({step}: StepConstructor) {
+export function Stepper ({step}: StepConstructor) {
   return(
     <div className='d-flex justify-content-between align-items-center mb-56 mt-32'>
       <div className='d-flex flex-column align-items-center'>

@@ -1,5 +1,7 @@
 import { useState } from "react"
-import { Input } from "../Input/Input"
+import {
+  Input
+} from '../Components'
 
 interface FormValid {
   register: any,
