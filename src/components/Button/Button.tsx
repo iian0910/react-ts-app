@@ -4,7 +4,7 @@ interface ButtonProps {
   type: "button" | "submit" | "reset" | undefined,
   text: string;
   status: string;
-  handleChange: any | null | undefined
+  handleChange?: any
 }
 
 export function Button({ type, text, status, handleChange }: ButtonProps) {

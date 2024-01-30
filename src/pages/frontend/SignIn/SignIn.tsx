@@ -148,7 +148,7 @@ export function SingIn() {
               </div>
             }
             <div className="mt-40 mb-3">
-              <Button type="submit" text="下一步" status="primary" handleChange={null}/>
+              <Button type="submit" text="下一步" status="primary" />
             </div>
             <div className='d-flex align-items-center'>
               <span className='text-white me-2 Subtitle_mobile'>已經有會員了嗎?</span>

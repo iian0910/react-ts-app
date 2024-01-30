@@ -88,7 +88,7 @@ export function Login() {
               <Button type="button" text='忘記密碼?' status='text' handleChange={resetPassword} />
             </div>
             <div className="my-40">
-              <Button type="submit" text="會員登入" status="primary" handleChange={null}/>
+              <Button type="submit" text="會員登入" status="primary" />
             </div>
             <div className='d-flex align-items-center'>
               <span className='text-white me-2 Subtitle_mobile'>沒有會員嗎?</span>
