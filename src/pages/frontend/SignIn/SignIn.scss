@@ -16,14 +16,15 @@ $phone: '(max-width: 600px)' !default;
 
 .sideImg {
   width: 100%;
-  height: calc(var(--vh, 1vh) * 100);
+  height: auto;
+  padding-top: calc(100% / 19 * 21);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 .login_contain {
   width: 100%;
-  height: calc(var(--vh, 1vh) * 100);
+  height: 100%;
   background-color: $neutral-BG;
 }
 .box {
